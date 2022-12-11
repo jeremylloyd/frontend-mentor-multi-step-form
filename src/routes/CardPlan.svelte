@@ -7,7 +7,7 @@
 </script>
 
 <label class='card' class:card--selected={selected == inputId} for={inputId}>
-  <input type="radio" name='plan' id={inputId} bind:group={selected} value={inputId}>
+  <input type="radio" name='plan' id={inputId} bind:group={selected} value={inputId} required>
   <img class='card__icon' src={plan.icon} alt="icon-{inputId}">
   <div class='card__details'>
     <h3 class='card__title'>{plan.alias}</h3>
@@ -55,7 +55,9 @@
   }
 
   input {
-    display: none;
+    opacity: 0;   /* Prefer this over display: none to show the form invalidation messages */
+    position: absolute;
+    z-index: -1;
   }
 
   .card--selected {

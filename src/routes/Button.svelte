@@ -1,8 +1,10 @@
 <script>
   export let variant = 'default';
+  export let type = 'button';
+  export let form = null;
 </script>
 
-<button class="button" class:button--light={variant == 'light'} on:click>
+<button class="button" class:button--light={variant == 'light'} class:button--primary={variant == 'primary'} on:click type={type} form={form}>
   <slot></slot>
 </button>
 
@@ -16,10 +18,16 @@
     border: none;
     font-size: 0.9rem;
     cursor: pointer;
+    min-width: 100px;
   }
 
   .button--light {
     background: none;
     color: grey;
+    min-width: unset;
+  }
+
+  .button--primary {
+    background-color: var(--bluepurple);
   }
 </style>
