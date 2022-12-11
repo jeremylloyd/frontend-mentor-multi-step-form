@@ -58,13 +58,18 @@
     font-weight: 500;
     border-radius: 5px;
     outline-width: 1px;
+    transition: outline-color 0.2s ease-out;
+  }
+  
+  .unfocused .page__input-text:invalid {
+    outline: solid 1px red;
+  }
+
+  .page__input-text:focus {
+    outline: solid 1px var(--bluepurple);
   }
 
   .page__input-text::placeholder {
     color: var(--grey);
-  }
-
-  .unfocused .page__input-text:invalid {
-    outline: solid 1px red;
   }
 </style>

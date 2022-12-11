@@ -30,12 +30,8 @@
     user-select: none;
   }
 
-  .card__icon {
-
-  }
-  
-  .card__details {
-
+  .card:active {
+    border-color: var(--bluepurple);
   }
 
   .card__subtitle {

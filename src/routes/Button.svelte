@@ -19,6 +19,12 @@
     font-size: 0.9rem;
     cursor: pointer;
     min-width: 100px;
+    transition: background-color 0.1s ease-out;
+    font-weight: 500;
+  }
+
+  .button:active {
+    background-color: var(--bluemarinelight);
   }
 
   .button--light {
@@ -26,8 +32,17 @@
     color: grey;
     min-width: unset;
   }
+  
+  .button--light:active {
+    background: none;
+    color: var(--bluemarine);
+  }
 
   .button--primary {
     background-color: var(--bluepurple);
+  }
+
+  .button--primary:active {
+    background-color: var(--bluepurplelight);
   }
 </style>

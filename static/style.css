@@ -53,7 +53,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
   --bluemarine: hsl(213, 96%, 18%);
+  --bluemarinelight: hsl(213, 55%, 28%);
   --bluepurple: hsl(243, 100%, 62%);
+  --bluepurplelight: hsl(251, 100%, 70%);
   --bluepastel: hsl(228, 100%, 84%);
   --purplelight: hsla(243, 100%, 62%, 0.05);
   --red: hsl(354, 84%, 57%);
@@ -198,5 +200,9 @@ body {
 
 .summary__link, .summary__link:visited {
   color: var(--grey);
+}
+
+.summary__link:active {
+  color: var(--bluepurple);
 }
 

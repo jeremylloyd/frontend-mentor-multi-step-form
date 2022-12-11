@@ -28,6 +28,10 @@
     user-select: none;
   }
 
+  .card:active {
+    border-color: var(--bluepurple);
+  }
+
   .card__details {
     display: flex;
     flex-direction: column;
