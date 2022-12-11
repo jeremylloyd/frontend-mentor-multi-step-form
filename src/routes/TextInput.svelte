@@ -4,8 +4,6 @@
   export let label;
   export let type = 'text';
 
-  import { onMount } from "svelte";
-
   let unfocused = false;
   let invalidLabel = "";
   let inputElem;
