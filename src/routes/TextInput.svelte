@@ -16,6 +16,8 @@
       return ""
     } else if (validity.valueMissing) {
       return "This field is required"
+    } else if (validity.typeMismatch) {
+      return "Please input an email address"
     }
     return ""
   }
