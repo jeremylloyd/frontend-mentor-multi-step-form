@@ -39,6 +39,7 @@ Users should be able to:
   - Designing components for reusability
     - Don't embed responsive media queries for small components like buttons. Instead, change the component style at the top-level (which will have more context)
     - Keep all the components you want to reuse in one place and well organised
+    - Input validation is a lot of boring work to set up and seems like a place where components will save heaps of time
 - General workflow
   - Don't worry about perfecting margins and padding until you've got the responsive layout working
   - Be disciplined in focusing on getting one component done at a time before moving onto the next
