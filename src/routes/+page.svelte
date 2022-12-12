@@ -82,7 +82,7 @@
     },
   ]
 
-  let page = 4;
+  let page = 1;
   let plan = null;
   let addonsSelected;
 
@@ -103,11 +103,12 @@
 
 <div class="page">
   <header class="page__header">
-    <img class="page__bg" src="images/bg-sidebar-mobile.svg" alt="background-mobile">
+    <img class="page__bg page__bg--mobile" src="images/bg-sidebar-mobile.svg" alt="background-mobile">
+    <img class="page__bg page__bg--desktop" src="images/bg-sidebar-desktop.svg" alt="background-desktop">
     <Paginator pages={pages} bind:pageSelected/>
   </header>
 
-  <div class:hidden={page != 1}>
+  <div class="page__contents" class:hidden={page != 1}>
     <main class="page__main">
       <h2 class="page__title">Personal info</h2>
       <p class="page__desc">Please provide your name, email address, and phone number.</p>

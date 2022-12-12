@@ -70,16 +70,30 @@ body {
   font-family: 'Ubuntu';  
 }
 
+.page__contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .page__header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .page__bg {
   position: absolute;
+}
+
+.page__bg--mobile {
   z-index: -1;
   width: 100%;
+}
+
+.page__bg--desktop {
+  display: none;
 }
 
 .page__main {
@@ -206,3 +220,41 @@ body {
   color: var(--bluepurple);
 }
 
+
+
+@media screen and (min-width: 600px) {
+  .page {
+    display: flex;
+    background: white;
+    min-height: 598px;
+  }
+
+  .page__header {
+    margin: 15px;
+    width: 274px;
+  }
+
+  .page__footer {
+    background: none;
+    position: unset;
+  }
+
+  .page__main {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 25px;
+    box-shadow: none;
+  }
+
+  .page__bg--mobile {
+    display: none;
+  }
+
+  .page__bg--desktop {
+    display: unset;
+  }
+}
