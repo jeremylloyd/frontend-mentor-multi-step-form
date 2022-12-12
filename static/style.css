@@ -227,7 +227,6 @@ body {
 
 .container-centred {
   min-height: 100vh;
-  border: solid 2px red;
   display: flex;
   justify-content: center;
 }
@@ -243,7 +242,6 @@ body {
     min-height: 598px;
     margin: 15px;
     border-radius: 15px;
-    border: solid 2px orange;
     flex-grow: 1;
   }
 
