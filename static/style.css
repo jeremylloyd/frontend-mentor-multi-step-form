@@ -302,4 +302,8 @@ body {
   }
 }
 
-
+@media (hover: hover) {
+  .summary__link:hover {
+    color: var(--bluepurple);
+  }
+}

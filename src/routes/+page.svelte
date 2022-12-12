@@ -82,7 +82,7 @@
     },
   ]
 
-  let page = 3;
+  let page = 1;
   let plan = null;
   let addonsSelected;
 

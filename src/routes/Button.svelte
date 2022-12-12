@@ -53,4 +53,20 @@
       border-radius: 10px;
     }
   }
+
+  @media (hover: hover) {
+    .button:hover {
+      background-color: var(--bluemarinelight);
+    }
+
+    .button--light:hover {
+      background: none;
+      color: var(--bluemarine);
+    }
+
+    .button--primary:hover {
+      background-color: var(--bluepurplelight);
+    }
+  }
 </style>
+

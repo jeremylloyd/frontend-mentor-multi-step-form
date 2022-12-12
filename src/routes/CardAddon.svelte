@@ -78,4 +78,10 @@
       font-size: inherit;
     }
   }
+
+  @media (hover: hover) {
+    .card:hover {
+      border-color: var(--bluepurple);
+    }
+  }
 </style>

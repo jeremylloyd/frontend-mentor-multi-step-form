@@ -71,4 +71,10 @@
       justify-content: space-between;
     }
   }
+
+  @media (hover: hover) {
+    .card:hover {
+      border-color: var(--bluepurple);
+    }
+  }
 </style>
