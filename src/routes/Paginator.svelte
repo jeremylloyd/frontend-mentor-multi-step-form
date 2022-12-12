@@ -53,7 +53,7 @@
     letter-spacing: 0.1rem;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
     .paginator {
       flex-direction: column;
       margin-top: 10px;

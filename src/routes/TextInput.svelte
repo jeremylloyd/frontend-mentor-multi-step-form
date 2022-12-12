@@ -21,7 +21,7 @@
   }
 </script>
 
-<div style="display: flex; flex-direction: column;" class:unfocused={unfocused}>
+<div class="container" class:unfocused={unfocused}>
   <div class="labels">
     <label class="page__label" for="{name}">{label}</label>
     <div class="label-invalid">{invalidLabel}</div>
@@ -30,6 +30,11 @@
 </div>
 
 <style>
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .label-invalid {
     font-size: 0.8rem;
     font-weight: 700;
@@ -71,5 +76,25 @@
 
   .page__input-text::placeholder {
     color: var(--grey);
+  }
+
+  @media screen and (min-width: 800px) {
+    .container {
+      gap: 5px;
+    }
+
+    .label-invalid {
+      font-size: 0.9rem;
+    }
+
+    .page__label {
+      font-size: 0.9rem;
+    }
+
+    .page__input-text {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 10px;
+    }    
   }
 </style>

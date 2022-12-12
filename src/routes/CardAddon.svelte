@@ -64,4 +64,18 @@
     background-color: hsla(243, 100%, 62%, 0.05);
     border: solid 1px var(--bluepurple);
   }
+
+  @media screen and (min-width: 800px) {
+    .card {
+      font-size: 1rem;
+    }
+
+    .card__desc {
+      font-size: 0.9rem;
+    }
+
+    .card__price {
+      font-size: inherit;
+    }
+  }
 </style>

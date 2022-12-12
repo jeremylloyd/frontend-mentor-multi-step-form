@@ -45,4 +45,12 @@
   .button--primary:active {
     background-color: var(--bluepurplelight);
   }
+
+  @media screen and (min-width: 800px) {
+    .button {
+      font-size: 1rem;
+      padding: 12px 30px;
+      border-radius: 10px;
+    }
+  }
 </style>

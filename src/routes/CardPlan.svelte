@@ -18,6 +18,8 @@
 
 <style>
   .card {
+    flex-grow: 1;
+
     display: flex;
     align-items: flex-start;
     gap: 15px;
@@ -59,5 +61,14 @@
   .card--selected {
     background-color: hsla(243, 100%, 62%, 0.05);
     border: solid 1px var(--bluepurple);
+  }
+
+  @media screen and (min-width: 800px) {
+    .card {
+      flex-direction: column;
+      height: 160px;
+      max-width: 140px;
+      justify-content: space-between;
+    }
   }
 </style>
